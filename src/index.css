@@ -16,10 +16,15 @@ body {
    font-family: "Roboto", sans-serif;
 }
 
-.font-roboto {
-   font-family: "Roboto", sans-serif;
+/* navbar */
+.navbar-show {
+   right: 0;
+   top: 80px;
+   transition: all 300ms ease-in;
 }
 
-.font-outfit {
-   font-family: "Outfit", sans-serif;
+.navbar-hide {
+   right: -10rem;
+   top: 80px;
+   transition: all 300ms ease-in;
 }
