@@ -6,7 +6,7 @@ const Navbar = () => {
    const [toggle, setToggle] = useState(false);
 
    return (
-      <div className="flex justify-between">
+      <div className="flex justify-between overflow-hidden">
          <h2 className="font-outfit font-black p-6">Krypto.</h2>
          <ul className="sm:flex hidden">
             {navLinks.map((link, index) => (

@@ -13,17 +13,25 @@ import "./App.css";
 
 function App() {
    return (
-      <div className="App">
+      <div className="w-full">
          <div className="xl:m-w-[1280px] w-full md:p-10 p-2">
             <Navbar />
          </div>
-         <Hero />
-         <Featured />
-         <Analytics />
-         <Download />
-         <Testimonials />
-         <CTA />
-         <Footer />
+
+         <div className="w-full">
+            <div className="xl:max-w-[1280px] w-full mx-auto">
+               <Hero />
+            </div>
+         </div>
+
+         <div className="xl:max-w-[1280px] w-full">
+            <Featured />
+            <Analytics />
+            <Download />
+            <Testimonials />
+            <CTA />
+            <Footer />
+         </div>
       </div>
    );
 }
