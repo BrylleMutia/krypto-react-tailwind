@@ -14,11 +14,11 @@ import "./App.css";
 function App() {
    return (
       <div className="w-full">
-         <div className="xl:m-w-[1280px] w-full md:p-10 p-2">
+         <div className="xl:max-w-[1280px] p-2 md:px-0 mx-auto">
             <Navbar />
          </div>
 
-         <div className="w-full">
+         <div className="w-full sm:px-[5rem] px-[2rem]">
             <div className="xl:max-w-[1280px] w-full mx-auto">
                <Hero />
             </div>
