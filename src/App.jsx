@@ -10,27 +10,37 @@ import {
    Footer,
 } from "./components";
 import "./App.css";
+import styles from "./styles";
+import Highlights from "./components/Highlights";
+import { highlights } from "./constants";
 
 function App() {
    return (
       <div className="w-full">
-         <div className="xl:max-w-[1280px] p-2 md:px-0 mx-auto">
+         <div className={`${styles.container} p-2 md:px-0 mx-auto`}>
             <Navbar />
          </div>
 
-         <div className="w-full sm:px-[5rem] px-[2rem]">
-            <div className="xl:max-w-[1280px] w-full mx-auto">
+         <div className="w-full">
+            <div
+               className={`${styles.container} mx-auto px-[2rem] sm:px-10 mb-20`}
+            >
                <Hero />
             </div>
          </div>
 
-         <div className="xl:max-w-[1280px] w-full">
+         <div
+            className={`${styles.container} mx-auto px-[2rem] sm:px-10 mb-20`}
+         >
             <Featured />
-            <Analytics />
+            {highlights.map((highlight, index) => (
+               <Highlights key={index} {...highlight} />
+            ))}
+            {/* <Analytics />
             <Download />
             <Testimonials />
             <CTA />
-            <Footer />
+            <Footer /> */}
          </div>
       </div>
    );

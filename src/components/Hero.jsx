@@ -1,5 +1,6 @@
 import React from "react";
 import { hero } from "../assets";
+import styles from "../styles";
 import Button from "./Button";
 
 const Hero = () => {
@@ -7,10 +8,10 @@ const Hero = () => {
       <section>
          <div className="flex md:flex-row flex-col-reverse items-center justify-between w-full gap-[5rem] xl:pt-0 pt-10">
             <div className="flex flex-col md:gap-10 gap-7">
-               <h className="font-outfit font-black text-h1 w-[100%]">
+               <h1 className={`${styles.heading1} w-[100%]`}>
                   Discover <br className="md:block hidden" />
                   and collect <br className="md:block hidden" /> rare NFTs
-               </h>
+               </h1>
                <p className="text-p">
                   The most secure marketplace for buying <br /> and selling
                   unique crypto assets.
