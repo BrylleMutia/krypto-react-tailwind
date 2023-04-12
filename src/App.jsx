@@ -32,9 +32,14 @@ function App() {
          <div
             className={`${styles.container} mx-auto px-[2rem] sm:px-10 mb-20`}
          >
-            <Featured />
+            <div className="mb-[7rem]">
+               <Featured />
+            </div>
+
             {highlights.map((highlight, index) => (
-               <Highlights key={index} {...highlight} />
+               <div className="mb-[7rem]">
+                  <Highlights key={index} {...highlight} />
+               </div>
             ))}
             {/* <Analytics />
             <Download />
