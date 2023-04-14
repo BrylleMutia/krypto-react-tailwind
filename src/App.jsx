@@ -41,10 +41,8 @@ function App() {
                   <Highlights key={index} {...highlight} />
                </div>
             ))}
-            {/* <Analytics />
-            <Download />
             <Testimonials />
-            <CTA />
+            {/* <CTA />
             <Footer /> */}
          </div>
       </div>

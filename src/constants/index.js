@@ -37,3 +37,24 @@ export const highlights = [
       buttonText: "Download on ios",
    },
 ];
+
+export const testimonials = [
+   {
+      imgSrc: "client1.png",
+      name: "Carol Danvers",
+      feedback:
+         "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ullamcorper scelerisque mi, in malesuada felis malesuada vel.",
+   },
+   {
+      imgSrc: "client2.png",
+      name: "Tony Stark",
+      feedback:
+         "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ullamcorper scelerisque mi, in malesuada felis malesuada vel.",
+   },
+   {
+      imgSrc: "client3.png",
+      name: "Nat Romanoff",
+      feedback:
+         "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ullamcorper scelerisque mi, in malesuada felis malesuada vel.",
+   },
+];
