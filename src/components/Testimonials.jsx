@@ -3,7 +3,7 @@ import { testimonials } from "../constants";
 import styles, { layout } from "../styles";
 
 const TestimonialCard = ({ imgSrc, name, feedback }) => (
-   <div className="flex flex-col items-center gap-[1.3rem] p-[2.5rem] basis-1/3 bg-featured rounded-2xl relative">
+   <div className="flex flex-col items-center mt-[9rem] gap-[1.3rem] p-[2.5rem] basis-1/3 bg-featured rounded-2xl relative max-w-[24rem] min-w-[20rem]">
       <img
          src={`../src/assets/${imgSrc}`}
          alt="testimonial"
@@ -24,7 +24,7 @@ const Testimonials = () => (
       <h1 className={`${styles.heading1} mb-[5.5rem]`}>
          Read What Others <br /> Have to Say
       </h1>
-      <div className={`${layout.flexCenter} mt-[12rem] flex-wrap`}>
+      <div className={`${layout.flexCenter} flex-wrap gap-[1rem]`}>
          {testimonials.map((testimonial, index) => (
             <TestimonialCard {...testimonial} key={index} />
          ))}
