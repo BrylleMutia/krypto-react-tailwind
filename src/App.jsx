@@ -41,9 +41,12 @@ function App() {
                   <Highlights key={index} {...highlight} />
                </div>
             ))}
-            <Testimonials />
-            {/* <CTA />
-            <Footer /> */}
+
+            <div className="mb-[5rem]">
+               <Testimonials />
+            </div>
+            <CTA />
+            {/* <Footer /> */}
          </div>
       </div>
    );
