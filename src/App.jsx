@@ -45,8 +45,10 @@ function App() {
             <div className="mb-[5rem]">
                <Testimonials />
             </div>
-            <CTA />
-            {/* <Footer /> */}
+            <div className="mb-[12rem]">
+               <CTA />
+            </div>
+            <Footer />
          </div>
       </div>
    );

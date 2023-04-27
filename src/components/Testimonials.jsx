@@ -9,11 +9,7 @@ const TestimonialCard = ({ imgSrc, name, feedback }) => (
          alt="testimonial"
          className="rounded-[50%] absolute -top-[8rem]"
       />
-      <h2
-         className={`${styles.heading2} text-[1.2rem] font-semibold mt-[9rem]`}
-      >
-         {name}
-      </h2>
+      <h4 className={`${styles.heading4} mt-[9rem]`}>{name}</h4>
       <p className={`${styles.heading2} font-light`}>{feedback}</p>
    </div>
 );

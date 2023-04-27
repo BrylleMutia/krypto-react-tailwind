@@ -7,11 +7,9 @@ const CTA = () => (
       <div
          className={`${layout.flexCenter} flex-col w-full h-[25em] bg-gradient-to-r from-secondary to-accent rounded-[2rem]`}
       >
-         <h2
-            className={`${styles.heading2} text-primary text-[1.3em] font-semibold mb-[1rem]`}
-         >
+         <h3 className={`${styles.heading3} text-primary mb-[1rem]`}>
             Are you ready?
-         </h2>
+         </h3>
          <h1 className={`${styles.heading1} text-center mb-[2rem]`}>
             Be a part of the <br /> next BIG thing.
          </h1>
