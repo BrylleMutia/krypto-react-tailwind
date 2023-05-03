@@ -93,8 +93,8 @@ const Footer = () => (
 
       <div className="flex flex-col items-center gap-5 mt-2">
          <h1 className="rainbow-text-loop">
-            Hi Pancake, my very adorable Pancake, I love you! (idk why this is
-            rgb but iz fancy)
+            Hi Pancake, my very adorable Pancake, I love you! <br />
+            <span className="text-xs">(idk why this is rgb but iz fancy)</span>
          </h1>
          <img className="max-w-[150px]" src={heart} alt="heart" />
          <img className="max-w-[150px]" src={pika} alt="pika" />
