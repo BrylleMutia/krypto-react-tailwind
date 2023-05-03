@@ -48,7 +48,7 @@ function App() {
                </div>
             ))} */}
 
-            <section className="mb-[7rem]">
+            <section className="mb-[7rem]" id="nft">
                <div className={`${layout.flexCenter} left gap-10 flex-wrap`}>
                   <img src={analytics} alt="analytics" />
                   <div className="flex flex-col items-start gap-7 lg:w-[50%] w-[100%]">
@@ -91,10 +91,13 @@ function App() {
             <div className="mb-[5rem]">
                <Testimonials />
             </div>
-            <div className="mb-[12rem]">
+            <div className="mb-[12rem]" id="pricing">
                <CTA />
             </div>
-            <Footer />
+
+            <div id="about">
+               <Footer />
+            </div>
          </div>
       </div>
    );
