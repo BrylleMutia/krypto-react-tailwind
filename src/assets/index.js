@@ -11,6 +11,8 @@ import logo2 from "./logo2.png";
 import logo3 from "./logo3.png";
 import logo4 from "./logo4.png";
 import menu from "./menu.svg";
+import heart from "./heart.gif";
+import pika from "./pika.jpg";
 
 export {
    analytics,
@@ -26,4 +28,6 @@ export {
    logo3,
    logo4,
    menu,
+   heart,
+   pika,
 };
