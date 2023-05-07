@@ -17,13 +17,32 @@ export const navLinks = [
    },
 ];
 
+export const featured = [
+   {
+      id: "Featured company 1",
+      imgSrc: "https://i.ibb.co/ck0wT61/logo1.png",
+   },
+   {
+      id: "Featured company 2",
+      imgSrc: "https://i.ibb.co/z867X3f/logo2.png",
+   },
+   {
+      id: "Featured company 3",
+      imgSrc: "https://i.ibb.co/JtJj2N8/logo3.png",
+   },
+   {
+      id: "Featured company 4",
+      imgSrc: "https://i.ibb.co/YjtYPPN/logo4.png",
+   },
+];
+
 export const highlights = [
    {
       title: "Analytics",
       header: "built-in analytics to track your NFTs",
       paragraph:
          "Use our built-in analytics dashboard to pull valuable insights and monitor the value of your Krypto portfolio over time.",
-      img: "analytics",
+      imgSrc: "https://i.ibb.co/Cw6QZpC/analytics.png",
       imgAlign: "right",
       buttonText: "view our pricing",
    },
@@ -32,7 +51,7 @@ export const highlights = [
       header: "browse NFTs from your smartphone",
       paragraph:
          "Our Krypto app is the easiest way to keep track of your assets when you’re on the go.",
-      img: "download",
+      imgSrc: "https://i.ibb.co/HdV8K5g/download.png",
       imgAlign: "left",
       buttonText: "Download on ios",
    },
@@ -40,19 +59,19 @@ export const highlights = [
 
 export const testimonials = [
    {
-      imgSrc: "client1.png",
+      imgSrc: "https://i.ibb.co/4T4YF3p/client1.png",
       name: "Carol Danvers",
       feedback:
          "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ullamcorper scelerisque mi, in malesuada felis malesuada vel.",
    },
    {
-      imgSrc: "client2.png",
+      imgSrc: "https://i.ibb.co/88cXZSp/client2.png",
       name: "Tony Stark",
       feedback:
          "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ullamcorper scelerisque mi, in malesuada felis malesuada vel.",
    },
    {
-      imgSrc: "client3.png",
+      imgSrc: "https://i.ibb.co/qCNfbvd/client3.png",
       name: "Nat Romanoff",
       feedback:
          "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ullamcorper scelerisque mi, in malesuada felis malesuada vel.",

@@ -2,8 +2,6 @@ import React from "react";
 import styles, { layout } from "../styles";
 import Button from "./Button";
 
-import { heart, pika } from "../assets";
-
 const Footer = () => (
    <section>
       <div className="flex justify-between flex-wrap">
@@ -69,7 +67,7 @@ const Footer = () => (
                </h4>
                <form action="POST" method="_blank">
                   <div className="rounded-full bg-featured flex">
-                     <label for="submit" className="hidden">
+                     <label htmlFor="submit" className="hidden">
                         Email
                      </label>
                      <input
@@ -89,15 +87,6 @@ const Footer = () => (
                </form>
             </div>
          </div>
-      </div>
-
-      <div className="flex flex-col items-center gap-5 mt-2">
-         <h1 className="rainbow-text-loop">
-            Hi Pancake, my very adorable Pancake, I love you! <br />
-            <span className="text-xs">(idk why this is rgb but iz fancy)</span>
-         </h1>
-         <img className="max-w-[150px]" src={heart} alt="heart" />
-         <img className="max-w-[150px]" src={pika} alt="pika" />
       </div>
    </section>
 );

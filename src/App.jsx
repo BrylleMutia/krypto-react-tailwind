@@ -3,8 +3,6 @@ import {
    Navbar,
    Hero,
    Featured,
-   Analytics,
-   Download,
    Testimonials,
    CTA,
    Footer,
@@ -13,11 +11,6 @@ import "./App.css";
 import styles from "./styles";
 import Highlights from "./components/Highlights";
 import { highlights } from "./constants";
-
-// temp images fix
-import { analytics, download } from "./assets";
-import { layout } from "./styles";
-import Button from "./components/Button";
 
 function App() {
    return (
@@ -41,52 +34,11 @@ function App() {
                <Featured />
             </div>
 
-            {/* temp images fix */}
-            {/* {highlights.map((highlight, index) => (
-               <div className="mb-[7rem]">
+            {highlights.map((highlight, index) => (
+               <div className="mb-[7rem]" key={index}>
                   <Highlights key={index} {...highlight} />
                </div>
-            ))} */}
-
-            <section className="mb-[7rem]" id="nft">
-               <div className={`${layout.flexCenter} left gap-10 flex-wrap`}>
-                  <img src={analytics} alt="analytics" />
-                  <div className="flex flex-col items-start gap-7 lg:w-[50%] w-[100%]">
-                     <h2 className={`${styles.heading2} text-accent`}>
-                        Analytics
-                     </h2>
-                     <h1 className={`${styles.heading1} capitalize`}>
-                        built-in analytics to track your NFTs
-                     </h1>
-                     <p className="text-p">
-                        Use our built-in analytics dashboard to pull valuable
-                        insights and monitor the value of your Krypto portfolio
-                        over time.
-                     </p>
-                     <Button text="view our pricing" styles="bg-secondary" />
-                  </div>
-               </div>
-            </section>
-            <section className="mb-[7rem]">
-               <div
-                  className={`${layout.flexCenter} flex-row-reverse gap-10 flex-wrap`}
-               >
-                  <img src={download} alt="download" />
-                  <div className="flex flex-col items-start gap-7 lg:w-[50%] w-[100%]">
-                     <h2 className={`${styles.heading2} text-accent`}>
-                        Get our app
-                     </h2>
-                     <h1 className={`${styles.heading1} capitalize`}>
-                        browse NFTs from your smartphone
-                     </h1>
-                     <p className="text-p">
-                        Our Krypto app is the easiest way to keep track of your
-                        assets when you're on the go.
-                     </p>
-                     <Button text="Download on ios" styles="bg-secondary" />
-                  </div>
-               </div>
-            </section>
+            ))}
 
             <div className="mb-[5rem]">
                <Testimonials />

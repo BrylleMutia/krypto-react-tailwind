@@ -6,7 +6,7 @@ const Highlights = ({
    title,
    header,
    paragraph,
-   img,
+   imgSrc,
    imgAlign,
    buttonText,
 }) => {
@@ -17,7 +17,7 @@ const Highlights = ({
                imgAlign === "left" && "flex-row-reverse"
             } gap-10 flex-wrap`}
          >
-            <img src={`../src/assets/${img}.png`} alt="title" />
+            <img src={imgSrc} alt="title" />
             <div className="flex flex-col items-start gap-7 lg:w-[50%] w-[100%]">
                <h2 className={`${styles.heading2} text-accent`}>{title}</h2>
                <h1 className={`${styles.heading1} capitalize`}>{header}</h1>
