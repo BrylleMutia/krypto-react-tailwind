@@ -23,6 +23,9 @@ const Hero = () => {
                      styles="border border-accent border-[0.2rem]"
                   />
                </div>
+
+               <div className="absolute z-[-99] w-[30%] h-[40%] left-[20%] -top-[10%] rounded-full secondary__gradient"></div>
+               <div className="absolute z-[-99] w-[30%] h-[50%] right-[0%] top-[40%] rounded-full accent__gradient"></div>
             </div>
             <img
                src={hero}

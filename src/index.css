@@ -2,6 +2,12 @@
 @tailwind components;
 @tailwind utilities;
 
+:root {
+   --primary: #000235;
+   --secondary: #8080d7;
+   --accent: #aad9d9;
+}
+
 *,
 *::before,
 *::after {
@@ -91,4 +97,17 @@ body {
    100% {
       color: orange;
    }
+}
+
+/* gradients */
+.secondary__gradient {
+   background: var(--secondary);
+   opacity: 0.5;
+   filter: blur(150px);
+}
+
+.accent__gradient {
+   background: var(--accent);
+   opacity: 0.4;
+   filter: blur(150px);
 }
