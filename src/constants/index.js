@@ -13,7 +13,7 @@ export const navLinks = [
    },
    {
       id: "nft",
-      title: "NFTs",
+      title: " ",
    },
 ];
 
