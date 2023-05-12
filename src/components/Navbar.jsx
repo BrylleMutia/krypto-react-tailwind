@@ -9,10 +9,10 @@ const Navbar = ({ links }) => {
       <div className="flex justify-between overflow-hidden">
          <h2 className="font-outfit font-black p-6">Krypto.</h2>
          <ul className="sm:flex hidden">
-            {navLinks.map((link, index) => (
+            {links.map((link, index) => (
                <li className="flex items-center p-2" key={index}>
                   <a
-                     href={`#${link.id}`}
+                     href={`#${link.title.toLowerCase()}`}
                      className="text-md transition-all px-6 py-2 hover:bg-accent"
                   >
                      {link.title}
@@ -33,9 +33,12 @@ const Navbar = ({ links }) => {
                   toggle ? "navbar-show" : "navbar-hide"
                } bg-secondary w-[10rem]`}
             >
-               {navLinks.map((link, index) => (
-                  <li className="p-6 hover:bg-accent" key={index}>
-                     <a href={`#${link.id}`} className="text-md">
+               {links.map((link, index) => (
+                  <li className="hover:bg-accent h-[70px]" key={index}>
+                     <a
+                        href={`#${link.title.toLowerCase()}`}
+                        className="text-md block h-full py-5 pl-4"
+                     >
                         {link.title}
                      </a>
                   </li>
