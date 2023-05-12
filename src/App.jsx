@@ -6,17 +6,15 @@ import {
    Testimonials,
    CTA,
    Footer,
+   Highlights,
 } from "./components";
 import "./App.css";
 import styles from "./styles";
-import Highlights from "./components/Highlights";
-import { highlights } from "./constants";
 
 import { initializeApp } from "firebase/app";
 import {
    getFirestore,
    orderBy,
-   getDocs,
    collection,
    query,
    limit,
